@@ -38,6 +38,8 @@ const Form = () => {
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            required
+            placeholder="Čia įrašykite savo Varda"
           />
         </div>
         <div className="form-group">
@@ -47,6 +49,7 @@ const Form = () => {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </div>
         <div className="form-group">
@@ -55,6 +58,8 @@ const Form = () => {
             id="question"
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
+            required
+            placeholder="Čia galite įrašyti savo klausima"
           ></textarea>
         </div>
         <div className="button-container">
